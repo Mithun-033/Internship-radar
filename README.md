@@ -94,8 +94,8 @@ internship-radar/
 
 ### 2. Clone the Repository
 ```bash
-git clone https://github.com/Mithun-033/internship-radar.git
-cd internship-radar
+git clone https://github.com/Mithun-033/Internship-radar.git
+cd Internship-radar
 ```
 
 ### 3. Create a Virtual Environment
