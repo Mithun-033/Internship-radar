@@ -1,0 +1,159 @@
+{
+  "application": {
+    "name": "Internship Radar",
+    "version": "1.0.0",
+    "host": "127.0.0.1",
+    "port": 8000,
+    "timezone": "Asia/Kolkata",
+    "reference_city": "Kolkata, India"
+  },
+  "candidate": {
+    "name": "Undergraduate Candidate",
+    "email": "candidate@example.com",
+    "github": "https://github.com",
+    "university": "B.Tech Computer Science (Data Science & AI)",
+    "degree": "B.Tech Computer Science (Data Science)",
+    "graduation_year": 2029,
+    "target_seasons": ["Summer 2027", "Fall 2026", "Winter 2026", "Spring 2027"],
+    "priority_domains": [
+      "GPU & Triton Optimization",
+      "LLM Research & Modeling",
+      "ML Systems & Training Infra",
+      "Applied AI / ML",
+      "Backend & Systems"
+    ]
+  },
+  "collection": {
+    "default_interval_minutes": 30,
+    "rate_limit_delay_seconds": 0.5,
+    "strict_same_day_feed": true,
+    "auto_daily_rollover": true
+  },
+  "sources": [
+    {
+      "id": "simplify_2026",
+      "name": "SimplifyJobs Active Summer 2026 & Off-cycle Feed",
+      "type": "live_feed",
+      "enabled": true,
+      "interval_minutes": 30
+    },
+    {
+      "id": "simplify_2027",
+      "name": "SimplifyJobs Active Summer 2027 Feed",
+      "type": "live_feed",
+      "enabled": true,
+      "interval_minutes": 30
+    },
+    {
+      "id": "nvidia_careers",
+      "name": "NVIDIA Official Career API (Workday)",
+      "type": "workday",
+      "company": "NVIDIA",
+      "enabled": true,
+      "interval_minutes": 30
+    },
+    {
+      "id": "cern_smartrecruiters",
+      "name": "CERN openlab / Scientific Research (SmartRecruiters)",
+      "type": "smartrecruiters",
+      "company": "CERN",
+      "enabled": true,
+      "interval_minutes": 60
+    },
+    {
+      "id": "greenhouse_anthropic",
+      "name": "Anthropic Careers (Greenhouse API)",
+      "type": "greenhouse",
+      "board_token": "anthropic",
+      "company": "Anthropic",
+      "enabled": true,
+      "interval_minutes": 30
+    },
+    {
+      "id": "greenhouse_scaleai",
+      "name": "Scale AI Careers (Greenhouse API)",
+      "type": "greenhouse",
+      "board_token": "scaleai",
+      "company": "Scale AI",
+      "enabled": true,
+      "interval_minutes": 30
+    },
+    {
+      "id": "greenhouse_databricks",
+      "name": "Databricks Careers (Greenhouse API)",
+      "type": "greenhouse",
+      "board_token": "databricks",
+      "company": "Databricks",
+      "enabled": true,
+      "interval_minutes": 30
+    },
+    {
+      "id": "greenhouse_stripe",
+      "name": "Stripe Careers (Greenhouse API)",
+      "type": "greenhouse",
+      "board_token": "stripe",
+      "company": "Stripe",
+      "enabled": true,
+      "interval_minutes": 45
+    },
+    {
+      "id": "greenhouse_cloudflare",
+      "name": "Cloudflare Careers (Greenhouse API)",
+      "type": "greenhouse",
+      "board_token": "cloudflare",
+      "company": "Cloudflare",
+      "enabled": true,
+      "interval_minutes": 45
+    },
+    {
+      "id": "greenhouse_roblox",
+      "name": "Roblox Careers (Greenhouse API)",
+      "type": "greenhouse",
+      "board_token": "roblox",
+      "company": "Roblox",
+      "enabled": true,
+      "interval_minutes": 45
+    },
+    {
+      "id": "ashby_perplexity",
+      "name": "Perplexity AI Careers (Ashby API)",
+      "type": "ashby",
+      "board_token": "perplexity",
+      "company": "Perplexity",
+      "enabled": true,
+      "interval_minutes": 30
+    },
+    {
+      "id": "ashby_cursor",
+      "name": "Cursor / Anysphere Careers (Ashby API)",
+      "type": "ashby",
+      "board_token": "cursor",
+      "company": "Cursor",
+      "enabled": true,
+      "interval_minutes": 30
+    },
+    {
+      "id": "ashby_replit",
+      "name": "Replit Careers (Ashby API)",
+      "type": "ashby",
+      "board_token": "replit",
+      "company": "Replit",
+      "enabled": true,
+      "interval_minutes": 45
+    },
+    {
+      "id": "remoteok_ml",
+      "name": "RemoteOK Developer & ML Jobs Feed",
+      "type": "remoteok",
+      "enabled": true,
+      "interval_minutes": 60
+    },
+    {
+      "id": "wwr_programming",
+      "name": "WeWorkRemotely Software & ML RSS",
+      "type": "rss",
+      "enabled": true,
+      "interval_minutes": 60
+    }
+  ]
+}
